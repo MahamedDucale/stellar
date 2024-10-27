@@ -7,16 +7,20 @@ load_dotenv()
 # Stellar Configuration
 STELLAR_SERVER_URL = "https://horizon-testnet.stellar.org"
 NETWORK_PASSPHRASE = "Test SDF Network ; September 2015"
-USDC_ISSUER = "GBBD47IF6LWK7P7MDEVSCWR7DPUWV3NY3DTQEVFL4NAT4AQH3ZLLFLA5"
+
+# Gold Token Configuration
+GOLD_CODE = "GOLD"
+GOLD_ISSUER = os.getenv("GOLD_ISSUER")
+GOLD_DECIMALS = 6
+GOLD_UNIT = "gram"
+GOLD_DESCRIPTION = "Test Gold Token - Each token represents 1 gram of physical gold"
+
+# Price API Configuration
+METALS_API_KEY = os.getenv("METALS_API_KEY")
+PRICE_UPDATE_INTERVAL = 300  # 5 minutes
+
+# Distribution Account
 DISTRIBUTION_SECRET_KEY = os.getenv("DISTRIBUTION")
-
-# Twilio Configuration
-TWILIO_PHONE_NUMBER = os.getenv("TWILIO_PHONE_NUMBER")
-TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
-TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-
-# Database Configuration
-DATABASE_URL = "sqlite:///transactions.db"
 
 # Application Configuration
 DEBUG = os.getenv("DEBUG", "False").lower() == "true"
