@@ -1,10 +1,10 @@
 # SMS Crypto Buyer
 
-A prototype SMS-based application for purchasing USDC cryptocurrency using MoneyGram payments.
+A prototype SMS-based application for purchasing Gold token cryptocurrency using MoneyGram cash point payments for the unbanked.
 
 ## Features
 
-- Purchase USDC via SMS
+- Purchase Gold via SMS
 - MoneyGram payment integration (simulated)
 - Real-time balance checking
 - Transaction history
@@ -17,15 +17,7 @@ A prototype SMS-based application for purchasing USDC cryptocurrency using Money
 pip install -r requirements.txt
 ```
 
-2. Create `.env` file:
-```
-DISTRIBUTION=your_distribution_secret_key
-TWILIO_PHONE_NUMBER=your_twilio_number
-TWILIO_ACCOUNT_SID=your_account_sid
-TWILIO_AUTH_TOKEN=your_auth_token
-DEBUG=True
-PORT=5000
-```
+2. Create `.env` file using `.env.example`
 
 3. Initialize the application:
 ```bash
@@ -36,9 +28,9 @@ python main.py
 
 - `buy <amount>` - Start USDC purchase
 - `confirm <reference>` - Confirm payment
-- `balance` - Check USDC balance
+- `balance` - Check Gold balance
 - `history` - View transaction history
-
+- `account` - View Account
 ## Testing
 
 For local testing:
