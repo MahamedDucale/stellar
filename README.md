@@ -1,4 +1,4 @@
-# SMS Crypto Buyer
+# GOLD-SMS 
 
 A prototype SMS-based application for purchasing Gold token cryptocurrency using MoneyGram cash point payments for the unbanked.
 
